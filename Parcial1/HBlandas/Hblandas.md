@@ -41,3 +41,7 @@ Las habilidades blandas pueden ser atributos personales, características de la 
 * Habilidades de presentación: Ser capaz de presentar ideas y resultados de manera clara y persuasiva a diferentes audiencias.
 
 * Empatía: Entender y considerar las necesidades y perspectivas de los usuarios y compañeros para diseñar soluciones más efectivas.
+
+* Inteligencia emocional: La capacidad de reconocer y gestionar tus propias emociones, así como las de los demás, es fundamental para trabajar en equipo y resolver conflictos.
+
+* Resiliencia: La capacidad de enfrentar desafíos y recuperarse de los fracasos es esencial para mantener la motivación y seguir adelante.
