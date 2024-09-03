@@ -11,8 +11,8 @@
     </form>
     <script>
          document.getElementById("btn_peticion").addEventListener("click",async ()=>{
-            let response=await fetch("http://localhost:3000");
-            let data =await response.text();
+            let response =  await fetch("http://localhost:3000",{method:"post"});
+            let data =  await response.text();
             console.log(data);
         })
     </script>
