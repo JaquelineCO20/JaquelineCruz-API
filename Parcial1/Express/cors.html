@@ -6,11 +6,17 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
-        <button type="button" id="btn_peticion">peticion</button>
+    <form target="resultado" method="GET" action="http://localhost:3000">
+        <button id="btnform" type="submit">Peticion Form</button>
+        <button id="btnJs" type="button">Peticion Js</button>
     </form>
+        <iframe name="resultado"></iframe>
+
+    <!-- <form>
+        <button type="button" id="btn_peticion">peticion</button>
+    </form> -->
     <script>
-         document.getElementById("btn_peticion").addEventListener("click",async ()=>{
+         document.getElementById("btnJs").addEventListener("click",async ()=>{
             let response =  await fetch("http://localhost:3000",{method:"post"});
             let data =  await response.text();
             console.log(data);
