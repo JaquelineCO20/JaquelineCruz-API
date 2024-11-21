@@ -4,6 +4,7 @@ const app = express();
 const cors = require('cors');
 const swaggerUI = require('swagger-ui-express');
 const swaggerJsDoc = require('swagger-jsdoc');
+const port = process.env.PORT || 8082
  
 const swaggerOptions = {
     definition: {
@@ -13,7 +14,7 @@ const swaggerOptions = {
     version: '1.0.0',
     },
     servers:[
-    { url: "http://localhost:3002" }
+    { url: "http://localhost:{port}" }
     ],
     },
     apis: [`${path.join(__dirname,"index.js")}`],
@@ -41,7 +42,7 @@ app.get("/api-spec",(req, res)=>{
     res.json(swaggerDocs);
 })
  
-app.listen(3002, () => {
-    console.log('Server Express escuchando en puerto 3002');
+app.listen(8082, () => {
+    console.log('Server Express escuchando en puerto ${port}');
 });
  
